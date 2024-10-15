@@ -5,11 +5,11 @@ export interface Event {
   id: number;
   nombre: string;
   fecha_inicio: string;
-  fecha_fin: string;
+  fecha_fin: string | null;
   hora_inicio: string;
-  hora_fin: string;
+  hora_fin: string | null;
   municipio: Municipio;
-  lugar: string;
+  lugar: string | null;
   capacitador: Capacitador;
-  link_inscripcion: string;
+  link_inscripcion: string | null;
 }
